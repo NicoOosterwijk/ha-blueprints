@@ -10,8 +10,10 @@
 #        selector:
 #          entity:
 #            filter:
-#              - domain: binary_sensor
 #              - device_class: motion
+#                domain: binary_sensor
+#              - device_class: occupancy
+#                domain: binary_sensor
 #     target_light:
 ### Gebruik een selector in de taget_light input declaratie om uitsluitend lights te kunnen kiezen voor de input:
 #        selector:
