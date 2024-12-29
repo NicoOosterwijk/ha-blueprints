@@ -18,5 +18,6 @@ triggers:
 
 actions:
   - action: light.turn_off
-    target:
-      entity_id: !input target_light
+    target: !input target_light
+
+mode: single
