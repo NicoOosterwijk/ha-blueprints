@@ -51,7 +51,7 @@ sequence:
   data:
     volume_level: !input volume
     target:
-      entity_id: input speaker_target
+      entity_id: !input speaker_target
 
 - alias: Speel mp3 op speaker
   action: media_player.play_media
@@ -60,6 +60,6 @@ sequence:
     media_content_id: !input file_2_play
     media_content_type: !input media_type
 
-mode: queued
-icon: mdi-music-clef-bass
-max: 2
+#mode: queued
+icon: mdi:music-clef-bass
+#max: 2
