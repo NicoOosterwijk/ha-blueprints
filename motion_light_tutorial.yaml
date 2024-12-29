@@ -4,6 +4,8 @@ blueprint:
   domain: automation
   #source_url: https://gitlab.com/digital-domo/ha-blueprints/raw/main/motion_light_tutorial.yaml
   author: Digital Domo
+  use_blueprint:
+    path: digital-domo/sensor-light
   input:
     motion_sensor:
       selector:
