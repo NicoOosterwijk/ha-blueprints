@@ -4,6 +4,7 @@ blueprint:
   domain: automation
   source_url: https://gitlab.com/digital-domo/ha-blueprints/-/raw/main/motion-light.yaml
   author: Digital Domo
+  path: digital-domo/motion-light
   input:
     motion_entity:
       name: Motion Sensor
