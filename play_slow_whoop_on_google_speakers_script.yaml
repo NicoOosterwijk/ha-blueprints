@@ -46,12 +46,12 @@ blueprint:
         text:
     
 sequence:
-- alias: Set het volume op de speaker
-  action: media_player.volume_set
-  data:
-    volume_level: !input volume
-    target:
-      entity_id: !input speaker_target
+# - alias: Set het volume op de speaker
+#   action: media_player.volume_set
+#   data:
+#     volume_level: !input volume
+#     target:
+#       entity_id: !input speaker_target
 
 - alias: Speel mp3 op speaker
   action: media_player.play_media
