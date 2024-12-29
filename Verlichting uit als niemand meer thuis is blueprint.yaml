@@ -1,0 +1,22 @@
+blueprint:
+  name: Presence Light On
+  description: Turn light on based on presence
+  domain: automation
+  author: Digital Domo
+  input:
+    target_light:
+      selector:
+        target:
+          entity:
+            - domain: light
+
+triggers:
+  - trigger: numeric_state
+    entity_id:
+      - zone.home
+    above: 0
+
+actions:
+  - action: light.turn_on
+    target:
+      entity_id: !input motion_sensor
