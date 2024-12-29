@@ -36,13 +36,13 @@ blueprint:
       selector:
         text:
     
-  sequence:
-  - alias: Media Player Blueprint Script
-    service: media_player.play_media
-    data:
-      entity_id: !input speaker_target
-      media_content_id: !input file_2_play
-      media_content_type: !input media_type
+sequence:
+- alias: Media Player Blueprint Script
+  service: media_player.play_media
+  data:
+    entity_id: !input speaker_target
+    media_content_id: !input file_2_play
+    media_content_type: !input media_type
 
 mode: queued
 icon: mdi-music-clef-bass
