@@ -10,7 +10,6 @@ blueprint:
   input:
     volume:
       name: Het volume waarop afgespeeld wordt
-      required: true
       default: 0.3
       selector:
         number:
