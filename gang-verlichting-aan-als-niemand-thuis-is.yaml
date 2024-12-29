@@ -1,0 +1,15 @@
+alias: Gang verlichting uit als niemand meer thuis is
+description: ""
+triggers:
+  - trigger: numeric_state
+    entity_id:
+      - zone.home
+    below: 1
+conditions: []
+actions:
+  - action: light.turn_off
+    metadata: {}
+    data: {}
+    target:
+      entity_id: light.lampgang
+mode: single
