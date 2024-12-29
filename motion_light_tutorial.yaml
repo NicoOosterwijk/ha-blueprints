@@ -4,22 +4,20 @@ blueprint:
   domain: automation
   #source_url: https://gitlab.com/digital-domo/ha-blueprints/raw/main/motion_light_tutorial.yaml
   author: Digital Domo
-  use_blueprint:
-    path: digital-domo/sensor-light
-    input:
-      motion_sensor:
-        selector:
+  input:
+    motion_sensor:
+      selector:
+        entity:
+          filter:
+            - device_class: motion
+              domain: binary_sensor
+            - device_class: occupancy
+              domain: binary_sensor
+    target_light:
+      selector:
+        target:
           entity:
-            filter:
-              - device_class: motion
-                domain: binary_sensor
-              - device_class: occupancy
-                domain: binary_sensor
-      target_light:
-        selector:
-          target:
-            entity:
-              - domain: light
+            - domain: light
 
 triggers:
   - trigger: state
