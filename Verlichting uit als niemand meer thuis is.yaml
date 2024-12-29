@@ -1,6 +1,6 @@
 blueprint:
-  name: Presence Light On
-  description: Turn light on based on presence
+  name: Presence Light Off
+  description: Doe het licht uit als niemand meer thuis is
   domain: automation
   author: Digital Domo
   input:
@@ -14,9 +14,9 @@ triggers:
   - trigger: numeric_state
     entity_id:
       - zone.home
-    above: 0
+    below: 1
 
 actions:
-  - action: light.turn_on
+  - action: light.turn_off
     target:
       entity_id: !input target_light
