@@ -2,9 +2,8 @@ blueprint:
   name: Motion Light Tutorial
   description: Turn a light on based on detected motion
   domain: automation
-  source_url: https://gitlab.com/digital-domo/ha-blueprints/-/blob/main/motion_light_tutorial.yaml
+  #source_url: https://gitlab.com/digital-domo/ha-blueprints/-/blob/main/motion_light_tutorial.yaml
   author: Digital Domo
-  path: digital-domo/motion-light
   input:
     motion_sensor:
       selector:
