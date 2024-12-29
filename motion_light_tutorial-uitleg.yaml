@@ -1,0 +1,39 @@
+# Onderstaand dient toegevoegd te worden om er een blueprint van te maken
+# blueprint:
+#   name: Motion Light Tutorial
+#   description: Turn a light on based on detected motion
+#   domain: automation
+## Alle inputs die hieronder zijn gedefinieerd voor triggers en/of actions, dienen te worden gedeclareerd:
+#   input:
+#     motion_sensor:
+### Gebruik een selector in de motion_sensor input declaratie om uitsluitend bewegingsmelders te kunnen kiezen voor de input:
+#        selector:
+#          entity:
+#            filter:
+#              - domain: binary_sensor
+#              - device_class: motion
+#     target_light:
+### Gebruik een selector in de taget_light input declaratie om uitsluitend lights te kunnen kiezen voor de input:
+#        selector:
+#          target:
+#            entity:
+#              - domain: light
+
+# Voor blueprint inputs voor triggers, wijzig de entity_id naar een !input voor een motion_sensor:
+#entity_id: !input motion_sensor
+triggers:
+  - trigger: state
+    entity_id: binary_sensor.motion_kitchen
+
+# Voor de actions gaan we ook inputs gebruiken, niet gelimiteerd tot een entity_id zodat ook ruimtes gebruikt kunnen worden. Dat wordt dan:
+# target: !input target_light
+actions:
+  - action: >
+      {% if trigger.to_state.state == "on" %}
+        light.turn_on
+      {% else %}
+        light.turn_off
+      {% endif %}
+    target:
+      entity_id: light.kitchen
+
