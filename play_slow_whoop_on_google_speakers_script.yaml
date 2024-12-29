@@ -2,7 +2,8 @@ blueprint:
   name: Play Slow-Whoop on Google Speakers
   author: Digital Domo
   description: >
-    📣 Dit script speelt een mp3 file genaamd slow-whoop.mp3 op Google Smart Speakers. Het bestand staat in een lokale /media directory.
+    📣 Dit script speelt een mp3 file genaamd slow-whoop.mp3 op Google Smart Speakers. 
+    Het bestand staat in een lokale /media directory of is een verwijzing naar het mp3 bestand in deze repo.
   source_url: https://gitlab.com/digital-domo/ha-blueprints/raw/main/play_slow_whoop_on_google_speakers_script.yaml
   homeassistant:
     min_version: 2023.8.0
@@ -28,11 +29,12 @@ blueprint:
       name: Media bestand dat afgespeeld wordt
       description: >
         Bijvoorbeeld: '/media/music/slow-whoop.mp3'.
+        
         Hier vind je meer informatie: 
           (https://www.home-assistant.io/more-info/local-media/add-media/)
           (https://www.home-assistant.io/more-info/local-media/setup-media/)
           (https://www.home-assistant.io/integrations/media_source/)
-      default: "/media/music/slow-whoop.mp3"
+      default: "https://gitlab.com/digital-domo/ha-blueprints/raw/main/slow-whoop.mp3"
       selector:
         text:
     media_type:
