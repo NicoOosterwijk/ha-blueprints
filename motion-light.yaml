@@ -2,7 +2,7 @@ blueprint:
   name: Licht aan bij beweging
   description: Schakel verlichting aan nadat beweging is gedetecteert.
   domain: automation
-  source_url: https://gitlab.com/digital-domo/ha-blueprints/-/blob/main/motion-light.yaml
+  source_url: https://gitlab.com/digital-domo/ha-blueprints/-/raw/main/motion-light.yaml
   author: Digital Domo
   input:
     motion_entity:
