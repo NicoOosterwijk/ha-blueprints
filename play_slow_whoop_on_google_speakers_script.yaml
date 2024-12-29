@@ -8,6 +8,16 @@ blueprint:
     min_version: 2023.8.0
   domain: script
   input:
+    volume:
+      name: Het volume waarop afgespeeld wordt
+      required: true
+      default: 0.3
+      selector:
+        number:
+          min: 0.1
+          max: 1
+          step: 0.1
+          mode: box
     speaker_target:
       name: De Google speaker waar het geluid naar toe moet worden gestuurd
       selector:
@@ -37,8 +47,15 @@ blueprint:
         text:
     
 sequence:
-- alias: Media Player Blueprint Script
-  service: media_player.play_media
+- alias: Set het volume op de speaker
+  action: media_player.volume_set
+  data:
+    volume_level: !input volume
+    target:
+      entity_id: input speaker_target
+
+- alias: Speel mp3 op speaker
+  action: media_player.play_media
   data:
     entity_id: !input speaker_target
     media_content_id: !input file_2_play
