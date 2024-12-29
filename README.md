@@ -1,7 +1,10 @@
 # HA Blueprints
 
-Deze kun je importeren in Home Assistant
+Deze kun je importeren in Home Assistant Blueprints
 
-Bv: 
-[motion_light_tutorial](https://gitlab.com/digital-domo/ha-blueprints/raw/main/motion_light_tutorial.yaml)
-[Licht aan indien iemand thuis komt](https://gitlab.com/digital-domo/ha-blueprints/raw/main/Verlichting%20uit%20als%20niemand%20meer%20thuis%20is%20blueprint.yaml)
+## Automations
+- [motion_light_tutorial](https://gitlab.com/digital-domo/ha-blueprints/raw/main/motion_light_tutorial.yaml)
+- [Licht uit wanneer niemand meer thuis is](https://gitlab.com/digital-domo/ha-blueprints/raw/main/Verlichting%20uit%20als%20niemand%20meer%20thuis%20is.yaml)
+
+## Scripts
+- [Speel slow-whoop op Google speakers](https://gitlab.com/digital-domo/ha-blueprints/raw/main/play_slow_whoop_on_google_speakers_script.yaml)
