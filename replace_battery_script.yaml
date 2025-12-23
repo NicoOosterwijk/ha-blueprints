@@ -1,7 +1,7 @@
 ---
 blueprint:
   name: Batterij vervangen
-  description: Zet de huidige datum als vervangdatum voor een batterij sensor
+  description: Zet de huidige datum als vervangdatum voor een batterij gevoede sensor
   domain: automation
 
   input:
