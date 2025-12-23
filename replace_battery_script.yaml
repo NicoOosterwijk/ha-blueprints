@@ -5,7 +5,7 @@ blueprint:
   domain: script
 
   input:
-    motion_sensor:
+    sensor:
        selector:
          entity:
            filter:
@@ -21,4 +21,4 @@ blueprint:
 actions:
   - action: battery_notes.set_battery_replaced
     data: 
-      device_id: !input motion_sensor
+      device_id: !input sensor
