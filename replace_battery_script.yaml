@@ -9,10 +9,14 @@ blueprint:
        selector:
          entity:
            filter:
-             - device_class: motion
-               domain: binary_sensor
-             - device_class: occupancy
-               domain: binary_sensor
+              - device_class: motion
+                domain: binary_sensor
+              - device_class: occupancy
+                domain: binary_sensor
+              - device_class: door
+                domain: binary_sensor
+              - device_class: window
+                domain: binary_sensor
 
 actions:
   - action: battery_notes.set_battery_replaced
