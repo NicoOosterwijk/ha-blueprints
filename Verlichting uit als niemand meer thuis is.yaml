@@ -3,17 +3,26 @@ blueprint:
   description: Doe het licht uit als niemand meer thuis is
   domain: automation
   author: Digital Domo
+
   input:
     target_light:
+      name: Verlichting
+      description: Kies de verlichting die aangeschakeld moet gaan worden
       selector:
         target:
           entity:
             - domain: light
+    home_zone:
+      name: Home Zone
+      description: De zone die gebruikt wordt voor de thuislocatie
+      selector:
+        entity:
+          filter:
+            - domain: zone
 
 triggers:
   - trigger: numeric_state
-    entity_id:
-      - zone.home
+    entity_id: !input home_zone
     below: 1
 
 actions:
