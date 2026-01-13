@@ -3,29 +3,29 @@ blueprint:
   name: Lamp rood bij rook
   domain: automation
 
-input:
-  target_light:
-    name: Verlichting
-    description: De verlichting die rood moet worden
-    selector:
-      target:
-        entity:
-          - domain: light
-  smoke_detector:
-    name: Rookmelders
-    description: De rookmelder die rook heeft gedetecteerd
-    selector:
-      entity:
-        filter:
-          - domain: binary_sensor
-            device_class: smoke
-    overrule_switches:
-      name: Overbrugging
-      description: Overbrugging zorgt ervoor dat overige automatiseringen niets conflicteren
+  input:
+    target_light:
+      name: Verlichting
+      description: De verlichting die rood moet worden
       selector:
-        entity: 
+        target:
+          entity:
+            - domain: light
+    smoke_detector:
+      name: Rookmelders
+      description: De rookmelder die rook heeft gedetecteerd
+      selector:
+        entity:
           filter:
-            - domain: input_boolean
+            - domain: binary_sensor
+              device_class: smoke
+      overrule_switches:
+        name: Overbrugging
+        description: Overbrugging zorgt ervoor dat overige automatiseringen niets conflicteren
+        selector:
+          entity: 
+            filter:
+              - domain: input_boolean
 
 triggers:
   - trigger: state
