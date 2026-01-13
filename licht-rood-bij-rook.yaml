@@ -1,6 +1,6 @@
 blueprint:
-  description: Rookmelding - dan lamp op rood
-  name: Lamp rood bij rook
+  description: Rookmelding - dan lamp vol wit aan 
+  name: Lamp wit bij rook
   domain: automation
 
   input:
