@@ -2,7 +2,8 @@ blueprint:
   description: Rookmelding - dan lamp fel wit aan 
   name: Lamp wit bij rook
   domain: automation
-
+  author: Digital Domo
+  
   input:
     target_light:
       name: Verlichting
