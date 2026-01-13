@@ -1,12 +1,12 @@
 blueprint:
-  description: Rookmelding - dan lamp vol wit aan 
+  description: Rookmelding - dan lamp fel wit aan 
   name: Lamp wit bij rook
   domain: automation
 
   input:
     target_light:
       name: Verlichting
-      description: De verlichting die rood moet worden
+      description: De verlichting die fel wit moet worden
       selector:
         target:
           entity:
