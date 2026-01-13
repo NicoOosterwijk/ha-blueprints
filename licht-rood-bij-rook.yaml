@@ -19,13 +19,13 @@ blueprint:
           filter:
             - domain: binary_sensor
               device_class: smoke
-      overrule_switches:
-        name: Overbrugging
-        description: Overbrugging zorgt ervoor dat overige automatiseringen niets conflicteren
-        selector:
-          entity: 
-            filter:
-              - domain: input_boolean
+    overrule_switches:
+      name: Overbrugging
+      description: Overbrugging zorgt ervoor dat overige automatiseringen niets conflicteren
+      selector:
+        entity: 
+          filter:
+            - domain: input_boolean
 
 triggers:
   - trigger: state
