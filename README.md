@@ -11,3 +11,7 @@ Deze kun je importeren in Home Assistant Blueprints. Gebruik de raw-links vanuit
 ## Scripts
 - [Speel slow-whoop op Google speakers](https://gitlab.com/digital-domo/ha-blueprints/raw/main/play_slow_whoop_on_google_speakers_script.yaml)
 - [Speel alarm op Google speakers](https://gitlab.com/digital-domo/ha-blueprints/raw/main/play_alarm_on_google_speakers_script.yaml)
+
+
+[Kijk hier voor meer info over blueprints](https://www.digitaldomo.nl/automatisering/blueprints/)
+
