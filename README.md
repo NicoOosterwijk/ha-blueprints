@@ -1,4 +1,5 @@
 # HA Blueprints
+!(http://www.digitaldomo.nl/wp-content/uploads/2018/06/digitaldomo.png)
 
 Deze kun je importeren in Home Assistant Blueprints. Gebruik de raw-links vanuit de beschrijving hieronder.
 
@@ -13,5 +14,5 @@ Deze kun je importeren in Home Assistant Blueprints. Gebruik de raw-links vanuit
 - [Speel alarm op Google speakers](https://gitlab.com/digital-domo/ha-blueprints/raw/main/play_alarm_on_google_speakers_script.yaml)
 
 
-[Kijk hier voor meer info over blueprints](https://www.digitaldomo.nl/automatisering/blueprints/)
+[Digital Domo -> blueprints](https://www.digitaldomo.nl/automatisering/blueprints/)
 
