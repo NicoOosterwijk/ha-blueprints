@@ -1,5 +1,5 @@
 # HA Blueprints
-![Digital Domo](http://www.digitaldomo.nl/wp-content/uploads/2018/06/digitaldomo.png)
+![Digital Domo](http://www.digitaldomo.nl/wp-content/uploads/2018/06/digitaldomo.png =250x)
 
 Deze kun je importeren in Home Assistant Blueprints. Gebruik de raw-links vanuit de beschrijving hieronder.
 
