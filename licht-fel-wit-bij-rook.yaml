@@ -1,5 +1,9 @@
 blueprint:
-  description: Rookmelding - dan lamp fel wit aan 
+  description: Rookmelding - dan lamp fel wit aan - Vanwege de kleur wijzigingen in Zigbee lampen, worden de acties zodanig uitgevoerd 
+    dat eerst de bewuste lamp wordt aangezet en daarna de kleur gewijzigd. 
+
+    Vóórdat de lamp wordt uitgeschakeld, wordt de kleur eerst weer op geel/goud gezet zodat bij het inschakelen 
+    van de lamp via een andere automatisering of via een dashboard, deze op standaard geel staat.
   name: Lamp wit bij rook
   domain: automation
   author: Digital Domo
