@@ -1,7 +1,7 @@
 # HA Blueprints
 <img alt="Digital Domo" src="http://www.digitaldomo.nl/wp-content/uploads/2018/06/digitaldomo.png" width="250"  />
 
-De blueprints kun je importeren in Home Assistant Blueprints. Gebruik de raw-links vanuit de links hieronder.
+De blueprints kun je importeren in Home Assistant Blueprints. Gebruik de raw-links vanuit de lijst hieronder.
 
 ## Automations
 - [motion_light_tutorial](https://gitlab.com/digital-domo/ha-blueprints/raw/main/motion_light_tutorial.yaml)
@@ -13,6 +13,6 @@ De blueprints kun je importeren in Home Assistant Blueprints. Gebruik de raw-lin
 - [Speel slow-whoop op Google speakers](https://gitlab.com/digital-domo/ha-blueprints/raw/main/play_slow_whoop_on_google_speakers_script.yaml)
 - [Speel alarm op Google speakers](https://gitlab.com/digital-domo/ha-blueprints/raw/main/play_alarm_on_google_speakers_script.yaml)
 
-
+## Meer info
 [Digital Domo -> blueprints](https://www.digitaldomo.nl/automatisering/blueprints/)
 
