@@ -22,7 +22,6 @@ blueprint:
       selector:
         target:
           entity:
-            filter:
               domain: light
     mijn_tijd:
       name: Tijd 
