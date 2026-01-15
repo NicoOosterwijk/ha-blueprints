@@ -1,0 +1,52 @@
+blueprint:
+  name: Verlichting aan/uit met timer
+  domain: automation
+  author: Digital Domo
+  description: >
+    Kies een sensor waarmee verlichting aangezet gaat worden. 
+    De verlichting kan een lamp zijn of een ruimte die verlicht moet worden.
+
+  input:
+    mijn_sensor:
+      name: Kies sensor
+      description: Kies de sensor waarmee het licht aangezet gaat worden.
+      selector:
+        entity:
+          filter:
+            domain: binary_sensor
+            device_class: motion
+          multiple: false
+    mijn_lamp:
+      name: Kies verlichting
+      description: Kies de lamp(en) of de ruimte die verlicht moet gaan worden.
+      selector:
+        entity:
+          filter:
+            domain: light
+    mijn_tijd:
+      name: Tijd 
+      description: De tijd dat de lamp aan blijft tot de automatisering het weer uit zet
+      selector:
+        number:
+          min: 1
+          max: 60
+          step: 1
+          unit_of_measurement: minutes
+          mode: slider
+
+triggers:
+  - trigger: state
+    entity_id: !input mijn_sensor
+    from: "off"
+    to: "on"
+
+actions:
+  - action: light.turn_on
+    target: !input mijn_lamp
+  - delay:
+      hours: 0
+      minutes: !input mijn_tijd
+      seconds: 0
+      milliseconds: 0
+  - action: light.turn_off
+    target: !input mijn_lamp
