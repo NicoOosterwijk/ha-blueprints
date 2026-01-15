@@ -21,7 +21,7 @@ blueprint:
       description: Kies de lamp(en) of de ruimte die verlicht moet gaan worden.
       selector:
         entity:
-          filter:
+          target:
             domain: light
     mijn_tijd:
       name: Tijd 
