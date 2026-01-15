@@ -1,40 +1,55 @@
 blueprint:
   name: Verlichting aan/uit met timer
-  domain: automation
   author: Digital Domo
-  source_url: https://gitlab.com/digital-domo/ha-blueprints/blob/main/verlichting-aan-uit-met-timer.yaml
   description: >
     Kies een sensor waarmee verlichting aangezet gaat worden. 
     De verlichting kan een lamp zijn of een ruimte die verlicht moet worden.
-
+  source_url: https://gitlab.com/digital-domo/ha-blueprints/blob/main/verlichting-aan-uit-met-timer.yaml
+  domain: automation
   input:
-    mijn_sensor:
-      name: Kies sensor
-      description: Kies de sensor waarmee het licht aangezet gaat worden.
-      selector:
-        entity:
-          filter:
-            domain: binary_sensor
-            device_class: motion
-          multiple: false
-    mijn_lamp:
-      name: Kies verlichting
-      description: Kies de lamp(en) of de ruimte die verlicht moet gaan worden.
-      selector:
-        target:
-          entity:
-            domain: light
-    mijn_tijd:
-      name: Tijd 
-      description: De tijd dat de lamp aan blijft tot de automatisering het weer uit zet
-      selector:
-        number:
-          min: 1
-          max: 60
-          step: 1
-          unit_of_measurement: minutes
-          mode: slider
-      default: 1
+    required_inputs:
+      name: Required Inputs
+      icon: mdi:alert-box
+      collapsed: false
+      description: >
+        Deze inputs zijn verplicht om de blueprint te laten functioneren en dienen ingevuld te worden.
+      input:
+        mijn_sensor:
+          name: Kies sensor
+          description: Kies de sensor waarmee het licht aangezet gaat worden.
+          selector:
+            entity:
+              filter:
+                domain: binary_sensor
+                device_class: motion
+              multiple: false
+        mijn_lamp:
+          name: Kies verlichting
+          description: Kies de lamp(en) of de ruimte die verlicht moet gaan worden.
+          selector:
+            target:
+              entity:
+                domain: light
+    required_inputs_with_defaults:
+      name: Defaulted Inputs
+      icon: mdi:alert-decagram
+      collapsed: true
+      description: >
+        Deze inputs zijn verplicht maar hebben een default waarde.
+        Het is mogelijk om deze waarde aan te passen nvvor jouw eigen situatie.
+        De blueprint werkt in ieder geval met deze default waarde.
+      input:
+        mijn_tijd:
+          name: Tijd 
+          description: De tijd dat de lamp aan blijft tot de automatisering het weer uit zet
+          selector:
+            number:
+              min: 1
+              max: 60
+              step: 1
+              unit_of_measurement: minutes
+              mode: slider
+          default: 1
 
 triggers:
   - trigger: state
