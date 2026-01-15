@@ -22,6 +22,7 @@ blueprint:
       selector:
         target:
           entity:
+          - integration: zha
             domain: light
     mijn_tijd:
       name: Tijd 
