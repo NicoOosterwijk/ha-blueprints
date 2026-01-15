@@ -22,8 +22,7 @@ blueprint:
       selector:
         target:
           entity:
-            filter:
-              domain: light
+            domain: light
     mijn_tijd:
       name: Tijd 
       description: De tijd dat de lamp aan blijft tot de automatisering het weer uit zet
