@@ -2,7 +2,6 @@ blueprint:
   name: Verlichting aan/uit met timer
   domain: automation
   author: Digital Domo
-  source: https://gitlab.com/digital-domo/ha-blueprints/-/raw/main/verlichting-aan-uit-met-timer.yaml
   description: >
     Kies een sensor waarmee verlichting aangezet gaat worden. 
     De verlichting kan een lamp zijn of een ruimte die verlicht moet worden.
