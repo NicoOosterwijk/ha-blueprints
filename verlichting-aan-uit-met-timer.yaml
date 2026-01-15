@@ -36,7 +36,7 @@ blueprint:
       collapsed: true
       description: >
         Deze inputs zijn verplicht maar hebben een default waarde.
-        Het is mogelijk om deze waarde aan te passen nvvor jouw eigen situatie.
+        Het is mogelijk om deze waarde aan te passen voor jouw eigen situatie.
         De blueprint werkt in ieder geval met deze default waarde.
       input:
         mijn_tijd:
