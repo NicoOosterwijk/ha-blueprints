@@ -45,10 +45,6 @@ triggers:
 actions:
   - action: light.turn_on
     target: !input mijn_lamp
-  - delay:
-      hours: 0
-      minutes: !input mijn_tijd
-      seconds: 0
-      milliseconds: 0
+  - delay: !input mijn_tijd
   - action: light.turn_off
     target: !input mijn_lamp
