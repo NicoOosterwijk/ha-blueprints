@@ -8,7 +8,7 @@ blueprint:
   domain: automation
   input:
     required_inputs:
-      name: Required Inputs
+      name: Verplichte inputs
       icon: mdi:alert-box
       collapsed: false
       description: >
@@ -31,7 +31,7 @@ blueprint:
               entity:
                 domain: light
     required_inputs_with_defaults:
-      name: Defaulted Inputs
+      name: Inputs met default waardes
       icon: mdi:alert-decagram
       collapsed: true
       description: >
