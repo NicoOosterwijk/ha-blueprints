@@ -23,7 +23,6 @@ blueprint:
         target:
           entity:
             domain: light
-            device_class: light
     mijn_tijd:
       name: Tijd 
       description: De tijd dat de lamp aan blijft tot de automatisering het weer uit zet
