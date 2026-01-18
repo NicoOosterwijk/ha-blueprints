@@ -20,14 +20,15 @@ blueprint:
         target:
           entity:
             - domain: binary_sensor
-          multiple: false
 
     status:
       name: status
       description: De nieuwe status van de binary_sensor
       selector:
-        text:
-      default: "off"
+        select:
+          options:
+            - "on"
+            - "off"
     
 actions:
   - action: pyhon_script.set_state
