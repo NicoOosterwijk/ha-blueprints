@@ -24,6 +24,11 @@ blueprint:
         entity:
           filter:
             - domain: binary_sensor
+              device_class: motion
+            - domain: binary_sensor
+              device_class: door
+            - domain: binary_sensor
+              device_class: window
           multiple: false
 
     tijd:
