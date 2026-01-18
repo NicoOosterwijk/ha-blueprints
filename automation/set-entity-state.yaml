@@ -54,7 +54,7 @@ triggers:
       seconds: 0
 
 actions:
-  - action: pyhon_script.set_state
+  - action: python_script.set_state
     data:
       entity_id: !input entiteit
       state: "on"
