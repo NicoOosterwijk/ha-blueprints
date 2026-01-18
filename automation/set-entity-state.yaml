@@ -4,7 +4,7 @@ blueprint:
     De service in deze automatisering maakt gebruik van een python script.
 
 
-  💡 De voorwaarden voor deze automatisering zijn daarom het volgende:
+     💡 De voorwaarden voor deze automatisering zijn daarom het volgende:
     - deze directory moet aanwezig zijn in Home Asistant: **/config/python_scripts**
     - in die directory moet het bestand **set_state.py** aanwezig zijn
     
