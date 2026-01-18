@@ -3,9 +3,11 @@ blueprint:
     Zet de status van een binairy_sensor entity op "off" wanneer deze te lang op "on" blijft staan.
     De service in deze automatisering maakt gebruik van een python script.
 
-    De voorwaarden voor deze automatisering zijn daarom het volgende:
+
+   :warning: De voorwaarden voor deze automatisering zijn daarom het volgende:
     - deze directory moet aanwezig zijn in Home Asistant: **/config/python_scripts**
     - in die directory moet het bestand **set_state.py** aanwezig zijn
+    
 
     Het bestand set_state.py staat ook in deze repository, kopieer de RAW versie en plak die in /config/puthon_scripts/set_state.py
 
