@@ -57,4 +57,4 @@ actions:
   - action: pyhon_script.set_state
     data:
       entity_id: !input entiteit
-      state: !input status
+      state: "on"
