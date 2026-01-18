@@ -20,8 +20,8 @@ blueprint:
         target:
           entity:
             - domain: binary_sensor
-      multiple: false
-      
+    multiple: false
+
     status:
       name: status
       description: De nieuwe status van de binary_sensor
