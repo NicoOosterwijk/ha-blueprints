@@ -1,0 +1,36 @@
+blueprint:
+  description: >
+    Zet de status van een binairy_sensor entity met behulp van een python script.
+
+    De voorwaarden voor deze automatisering zijn het volgende:
+    - deze directory moet aanwezig zijn in Home Asistant: **/config/python_scripts**
+    - in die directory moet het bestand **set_state.py** aanwezig zijn
+
+    Het bestand set_state.py staat ook in deze repostiry, kopieer de RAW versie en plak die in /config/puthon_scripts/set_state.py
+
+  name: Wijzig de status van een binary_sensor entiteit
+  domain: automation
+  author: Digital Domo
+  
+  input:
+    entiteit:
+      name: entiteit
+      description: De binary_sensor waarvan de staus gewijzigd moet worden
+      selector:
+        target:
+          entity:
+            - domain: binary_sensor
+      multiple: false
+      
+    status:
+      name: status
+      description: De nieuwe status van de binary_sensor
+      selector:
+        text:
+      default: "off"
+    
+actions:
+  - action: pyhon_script.set_state
+    data:
+      entity_id: !input entiteit
+      state: !input status
