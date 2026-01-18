@@ -11,8 +11,8 @@ newState = data.get('state')
 if newState is not None:
     inputState = newState
 
-newIcon = data.get('icon')
-if newIcon is not None:
-    inputAttributesObject['icon'] = newIcon
+newClass = data.get('device_class')
+if newClass is not None:
+    inputAttributesObject['device_class'] = newClass
 
 hass.states.set(inputEntity, inputState, inputAttributesObject)
