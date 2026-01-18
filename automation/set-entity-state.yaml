@@ -26,15 +26,6 @@ blueprint:
             - domain: binary_sensor
           multiple: false
 
-    # status:
-    #   name: status
-    #   description: De nieuwe status van de binary_sensor
-    #   selector:
-    #     select:
-    #       options:
-    #         - "on"
-    #         - "off"
-
     tijd:
       name: tijd
       description: De tijd in minuten dat de status van de binary_entity op "on" is blijven staan (default=5)
