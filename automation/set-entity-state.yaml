@@ -20,7 +20,7 @@ blueprint:
         target:
           entity:
             - domain: binary_sensor
-    multiple: false
+          multiple: false
 
     status:
       name: status
