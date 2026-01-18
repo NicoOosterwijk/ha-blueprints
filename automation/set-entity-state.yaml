@@ -21,9 +21,10 @@ blueprint:
       name: entiteit
       description: De binary_sensor waarvan de staus gewijzigd moet worden
       selector:
-        target:
-          entity:
+        entity:
+          filter:
             - domain: binary_sensor
+          multiple: false
 
     # status:
     #   name: status
