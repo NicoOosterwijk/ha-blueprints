@@ -8,6 +8,7 @@ De blueprints kun je importeren in Home Assistant Blueprints. Gebruik de raw-lin
 - [Zet verlichting op fel wit bij rook detectie](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FNicoOosterwijk%2Fha-blueprints%2Fblob%2Fmain%2Fautomation%2Flicht-fel-wit-bij-rook.yaml)
 - [Zet verlichting op rood bij alarm detectie](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FNicoOosterwijk%2Fha-blueprints%2Fblob%2Fmain%2Fautomation%2Flicht-rood-bij-alarm.yaml)
 - [Zet verlichting aan/uit via motion, met timer](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FNicoOosterwijk%2Fha-blueprints%2Fblob%2Fmain%2Fautomation%2Fverlichting-aan-uit-met-timer.yaml)
+- [Zet de status van een binary_sensor naar 'OFF' als deze te lang op "ON" blijft staan](https://github.com/NicoOosterwijk/ha-blueprints/blob/main/automation/set-entity-state.yaml)
 
 ## Scripts
 - [Speel slow-whoop op Google speakers](https://my.home-assistant.io/redirect/blueprint_import/?blueprint_url=https%3A%2F%2Fgithub.com%2FNicoOosterwijk%2Fha-blueprints%2Fblob%2Fmain%2Fscript%2Fplay_slow_whoop_on_google_speakers_script.yaml)
