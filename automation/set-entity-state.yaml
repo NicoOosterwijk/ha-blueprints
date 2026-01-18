@@ -1,6 +1,6 @@
 blueprint:
   description: >
-    Zet de status van een binairy_sensor entity op "off" wanneer deze te lang op "on" blijft staan.
+    Zet de status van een binary_sensor entity op "off" wanneer deze te lang op "on" blijft staan.
     De service in deze automatisering maakt gebruik van een python script.
 
 
